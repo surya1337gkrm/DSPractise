@@ -64,18 +64,35 @@
 
 //import module when package.json is available
 import {Linkedlist} from './Linkedlist/Linkedlist.js'
+import { DoubleLinkedlist } from './Linkedlist/DoubleLinkedlist.js'
 
 //when package.json isnt available
 // const Linkedlist=require('./Linkedlist/Linkedlist')
 const n=new Linkedlist(10)
-n.append(11)
-n.prepend(9)
-n.insert(1,116)
-n.insert(2,117)
-n.insert(5,118)
-n.remove(3)
-n.remove(5)
-n.remove(4)
-n.remove(3)
-console.log(n.printList())
-console.log(n)
+// n.append(11)
+// n.prepend(9)
+// n.insert(1,116)
+// n.insert(2,117)
+// n.insert(5,118)
+// n.remove(3)
+// n.remove(5)
+// n.remove(4)
+// n.remove(3)
+// n.remove(0)
+// n.remove(0)
+// console.log(n.printList())
+// console.log(n)
+
+const doubleList=new DoubleLinkedlist(9)
+doubleList.append(11)
+doubleList.prepend(8)
+doubleList.insert(2,10)
+doubleList.remove(3)
+doubleList.remove(2)
+doubleList.remove(0)
+
+
+
+
+console.log(doubleList)
+console.log(doubleList.printList())

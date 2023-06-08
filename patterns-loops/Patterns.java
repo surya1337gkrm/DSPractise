@@ -10,7 +10,12 @@ class Patterns {
         // Pattern.printReverseRightAngledTriangleWithNumbers(8);
         // Pattern.printTriangle(8);
         // Pattern.printReverseTriangle(4);
-        Pattern.printRhombus(6);
+        // Pattern.printRhombus(6);
+        // Pattern.printSideTriangle(6);
+        // Pattern.printBinaryRightAngledTriangled(6);
+        // Pattern.printNumberPattern01(4);
+        // Pattern.printNumbersPattern02(5);
+        Pattern.printAlphabets(5);
 
     }
 }

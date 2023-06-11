@@ -38,8 +38,10 @@ class Patterns {
         // System.out.println(MathFun.getDigits(7789));
         // System.out.println(MathFun.getLength(7789));
 
-        System.out.println(new reverseNumber().reverse(-901000));
-       
+        // System.out.println(new reverseNumber().reverse(-901000));
+        // System.out.println(new validPalindrome().isPalindrome("race a car"));
+        // System.out.println(new armstrongNumber().isArmstrongNumber(371));
+        new printAllDivisors().printDivisors(36);
 
     }
 }

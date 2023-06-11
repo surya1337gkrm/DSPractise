@@ -1,4 +1,9 @@
-import com.surya.pattern.*;
+// import com.surya.pattern.*;
+
+// import java.util.Collections;
+
+// import com.surya.math.*;
+import com.surya.leetcode.*;
 
 class Patterns {
     public static void main(String[] args) {
@@ -15,7 +20,26 @@ class Patterns {
         // Pattern.printBinaryRightAngledTriangled(6);
         // Pattern.printNumberPattern01(4);
         // Pattern.printNumbersPattern02(5);
-        Pattern.printAlphabets(5);
+        // Pattern.printAlphabets(5);
+        // Pattern.printReverseAlphabets(5);
+        // Pattern.printSameCharacters(5);
+        // Pattern.printPattern17(5);
+        // Pattern.printPattern18(5);
+        // Pattern.printPattern19(5);
+        // Pattern.printPattern20(5);
+        // Pattern.printPattern21(4);
+
+        // int num=789;
+        // String[] arr=Integer.toString(num).split("");
+        // for(String s:arr){
+        //     System.out.println((s)+1);
+        // }
+
+        // System.out.println(MathFun.getDigits(7789));
+        // System.out.println(MathFun.getLength(7789));
+
+        System.out.println(new reverseNumber().reverse(-901000));
+       
 
     }
 }

@@ -215,4 +215,139 @@ public class Pattern {
             System.out.println();
         }
     }
+
+    public static void printReverseAlphabets(int n){
+        System.out.println("Printing Alphabets in Reverse\n");
+        char c='A';
+        for(int i=n;i>0;i--){
+            for(int j=0;j<i;j++){
+                int res=c+j;
+                System.out.print((char)res+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printSameCharacters(int n){
+        System.out.println("Printing same charecters in a row");
+        char c='A';
+        for(int i=0;i<n;i++){
+            char res=(char)(c+i);
+            for(int j=0;j<=i;j++){
+                System.out.print(res+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern17(int n){
+        System.out.println("Printing Pattern 17.\n");
+        for(int i=1;i<=n;i++){
+            //spaces
+            for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+            }
+            //alphabets
+            char c='A';
+            int res=(int)('A');
+            for(int j=0;j<2*i-1;j++){
+                res=j<i?(c+j):(res-1);
+                System.out.print((char)res);
+            }
+            //spaces
+            for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern18(int n){
+        System.out.println("Printing Pattern 18\n");
+        char c='A';
+        for(int i=1;i<=n;i++){
+            for(int j=i;j>0;j--){
+                System.out.print((char)(c+n-j)+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern19(int n){
+        System.out.println("Printing Pattern 19\n");
+
+        //Upper
+        for(int i=n;i>0;i--){
+            //stars
+            for(int j=i;j>0;j--){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=0;j<2*(n-i);j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=i;j>0;j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        //Lower
+        for(int i=1;i<=n;i++){
+            //stars
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=0;j<2*(n-i);j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern20(int n){
+        //Upper
+        for(int i=1;i<=2*n;i++){
+            int count=i<=n?i:2*n-i;
+            int spaces=n>i?2*(n-i):2*(i-n);
+            //stars
+            for(int j=0;j<count;j++){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=0;j<spaces;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=0;j<count;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern21(int n){
+        System.out.println("Printing Pattern 21");
+        for(int i=1;i<=n;i++){
+            for(int j=0;j<n;j++){
+                if(i==1 || i==n){
+                    System.out.print("*");
+                }else{
+                    if(j==0 || j==n-1){
+                        System.out.print("*");
+                    }else{
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    
 }

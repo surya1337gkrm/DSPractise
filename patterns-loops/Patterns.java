@@ -2,7 +2,9 @@
 
 // import java.util.Collections;
 
-// import com.surya.math.*;
+import com.surya.math.*;
+import java.util.Scanner;
+
 import com.surya.leetcode.*;
 
 class Patterns {
@@ -32,7 +34,7 @@ class Patterns {
         // int num=789;
         // String[] arr=Integer.toString(num).split("");
         // for(String s:arr){
-        //     System.out.println((s)+1);
+        // System.out.println((s)+1);
         // }
 
         // System.out.println(MathFun.getDigits(7789));
@@ -41,7 +43,14 @@ class Patterns {
         // System.out.println(new reverseNumber().reverse(-901000));
         // System.out.println(new validPalindrome().isPalindrome("race a car"));
         // System.out.println(new armstrongNumber().isArmstrongNumber(371));
-        new printAllDivisors().printDivisors(36);
+        // new printAllDivisors().printDivisors(442);
+        // System.out.println(new GCDofTwoNumbers().gcd(20, 50));
+        // System.out.println(new validPrime().isValidPrime(134));
+
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println(sc.nextInt());
+
+        System.out.println(new MathFun().getCommonFactors(850,442));
 
     }
 }

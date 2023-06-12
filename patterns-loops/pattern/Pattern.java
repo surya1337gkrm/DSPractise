@@ -1,4 +1,4 @@
-package com.surya.pattern;
+package pattern;
 
 public class Pattern {
     public static void printGrid(int n) {

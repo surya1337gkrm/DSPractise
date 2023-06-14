@@ -3,7 +3,14 @@
 // import java.util.Collections;
 
 import com.surya.math.*;
+
+import DSA.Recursion.Recursion;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import com.surya.leetcode.*;
 
@@ -50,7 +57,16 @@ class Patterns {
         // Scanner sc = new Scanner(System.in);
         // System.out.println(sc.nextInt());
 
-        System.out.println(new MathFun().getCommonFactors(850,442));
+        // System.out.println(new MathFun().getCommonFactors(850,442));
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+        // int[] revArray = new Recursion().revArray(0, arr.length - 1, arr);
+        int[] revArray = new Recursion().revArray(0, arr);
+        // for (int n : revArray) {
+        // System.out.print(n + " ");
+        // }
+
+        // System.out.println(new Recursion().isPalindrome(0, "MADAM"));
+        System.out.println(new Recursion().fibonacciWithRecursion(6));
 
     }
 }

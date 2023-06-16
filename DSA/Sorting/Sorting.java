@@ -1,5 +1,8 @@
 package DSA.Sorting;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Sorting {
     // selection sort will select minimum value of the array in each iteration(ith
     // iteration) and
@@ -84,5 +87,56 @@ public class Sorting {
             }
             System.out.println();
         }
+    }
+
+    private void mergeSubArrays(int[] arr, int low, int mid, int high) {
+        List<Integer> temp = new ArrayList<>();
+        int left = low; // starting index of first half
+        int right = mid + 1; // starting index of seconf half
+
+        // continue this until there are elements left in both halfs of the array
+        while (left <= mid && right <= high) {
+            if (arr[left] <= arr[right]) {
+                temp.add(arr[left]);
+                left++;
+            } else {
+                temp.add(arr[right]);
+                right++;
+            }
+        }
+
+        // if there are still elements prsnt in first half of the array
+        while (left <= mid) {
+            temp.add(arr[left]);
+            left++;
+        }
+
+        // if there are still elements in second half of the array
+        while (right <= high) {
+            temp.add(arr[right]);
+            right++;
+        }
+
+        // transferring the elements from temp arary to the original array
+        for (int i = low; i <= high; i++) {
+            arr[i] = temp.get(i - low);
+        }
+
+    }
+
+    public void mergeSort(int[] arr, int low, int high) {
+        if (low >= high)
+            return;
+        int mid = (low + high) / 2;
+        mergeSort(arr, low, mid);
+        mergeSort(arr, mid + 1, high);
+
+        // after sorting the sub arrays, we need to merge them
+        mergeSubArrays(arr, low, mid, high);
+
+        for (int a : arr) {
+            System.out.print(a + " ");
+        }
+        System.out.println();
     }
 }

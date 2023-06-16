@@ -24,7 +24,8 @@ public class Main {
             int[] arr = { 14, 22, 2, 16, 11, 7, 8, 19, 1 };
             // new Sorting().selectionSort(arr);
             // new Sorting().bubbleSort(arr);
-            new Sorting().insertionSort(arr);
+            // new Sorting().insertionSort(arr);
+            new Sorting().mergeSort(arr, 0, arr.length - 1);
 
         }
 

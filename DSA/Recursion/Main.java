@@ -2,6 +2,8 @@ package DSA.Recursion;
 
 import java.util.Scanner;
 
+import com.surya.leetcode.unionOfSortedArrays;
+
 import DSA.Hashing.Hashing;
 import DSA.Sorting.Sorting;
 
@@ -26,6 +28,11 @@ public class Main {
             // new Sorting().bubbleSort(arr);
             // new Sorting().insertionSort(arr);
             new Sorting().mergeSort(arr, 0, arr.length - 1);
+
+            int[] arr1 = { 1, 4, 5 };
+            int[] arr2 = { 2, 3, 4, 5, 6 };
+
+            new unionOfSortedArrays().unionArrays(arr1, arr2);
 
         }
 

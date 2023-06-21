@@ -36,10 +36,14 @@ public class rotateArray {
 
         // where [4,3,2,1] is reverse of n-k elements and [7,6,5] is reverse of last k
         // elements
+        if (nums.length == 1)
+            return;
+        k = k % (nums.length);
+        int n = nums.length;
 
-        revArray(0, nums.length - k - 1, nums);
-        revArray(nums.length - k, nums.length, nums);
-        revArray(0, nums.length - 1, nums);
+        revArray(0, n - k - 1, nums);
+        revArray(n - k, n, nums);
+        revArray(0, n - 1, nums);
 
         // revArray(0,n-1,nums);
         // revArray(0,k-1,nums);

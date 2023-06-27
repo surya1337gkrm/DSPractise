@@ -58,14 +58,14 @@ public class majorityElementII {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == ele1)
                 c1++;
-            if (nums[i] == ele2)
+            else if (nums[i] == ele2)
                 c2++;
         }
 
         // check if count > n/3 and add elements to the list
         if (c1 > Math.floor(nums.length / 3))
             res.add(ele1);
-        if (c2 > Math.floor(nums.length / 3) && ele1 != ele2)
+        if (c2 > Math.floor(nums.length / 3))
             res.add(ele2);
 
         return res;

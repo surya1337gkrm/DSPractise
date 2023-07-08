@@ -30,6 +30,11 @@ public class subarraysWithXORK {
         map.put(0, 1); // initially xor value is 0 with count 1
         for (int i = 0; i < nums.length; i++) {
             xr ^= nums[i];
+            // consider 4,2,2,6,4 as input array and target=6
+            // in sub-array 4,2,2,6 -> total xor value is 2(xr)
+            // let 4 is x and 2,2,6 which has xor value 6
+            // x^target=xr
+            // xor with target on both sides => (x^target)^target=xr^target => x=xr^target
             if (map.containsKey(xr ^ target)) {
                 count += map.get(xr ^ target);
             }

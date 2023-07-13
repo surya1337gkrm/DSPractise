@@ -17,6 +17,8 @@ public class nextPermutation {
         int n = nums.length;
 
         // updating the breakpoint index
+        // as we need to compare i and i+1 element, start iterating from n-2 element so
+        // that first comparision will be n-2 and n-1 element
         for (int i = n - 2; i >= 0; i--) {
             if (nums[i] < nums[i + 1]) {
                 index = i;

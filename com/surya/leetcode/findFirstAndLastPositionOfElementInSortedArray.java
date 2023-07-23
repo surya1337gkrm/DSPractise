@@ -1,5 +1,7 @@
 package com.surya.leetcode;
 
+// Simillar problem : COunt number of occurrences of target
+// return res[1]-res[0]+1 
 public class findFirstAndLastPositionOfElementInSortedArray {
     public int[] bruteForceMethod(int[] nums, int target) {
         // Approach 01: Brute Force

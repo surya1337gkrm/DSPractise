@@ -51,6 +51,7 @@ public class rotation {
     }
 
     public int findKRotation(int[] arr) {
-        return bruteForceMethod(arr);
+        // return bruteForceMethod(arr);
+        return betterApproach(arr);
     }
 }
